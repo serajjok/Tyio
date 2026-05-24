@@ -1,7 +1,4 @@
 ---
 kind: wasmer.io/App.v0
-name: ir-relay                        # نام app (قابل تغییر)
+name: ir-relay
 package: .
-
-scaling:
-  mode: auto
