@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Wasmer Relay</title>
+    <style>
+      body { font-family: sans-serif; max-width: 600px; margin: 4rem auto; padding: 1rem; }
+      code { background: #f0f0f0; padding: 2px 6px; border-radius: 4px; }
+    </style>
+  </head>
+  <body>
+    <h1>Wasmer Edge Relay</h1>
+    <p>The relay is active on <code>/*</code>.</p>
+    <p>Send an <code>x-host</code> header with your target host to proxy the request.</p>
+    <p><strong>Example:</strong></p>
+    <pre><code>curl https://&lt;your-app&gt;.wasmer.app/some/path \
+  -H "x-host: api.example.com"</code></pre>
+  </body>
+</html>
