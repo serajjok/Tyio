@@ -1,0 +1,18 @@
+[package]
+name = "YOUR_WASMER_USERNAME/relay"   # ← یوزرنیم Wasmer خودت رو اینجا بذار
+version = "1.0.3"
+description = "HTTP Relay Edge Worker — ported from Netlify Edge Functions"
+license = "MIT"
+
+[[module]]
+name = "relay"
+source = "src/index.js"
+abi = "js"
+
+[command]
+name = "relay"
+module = "relay"
+runner = "https://webc.org/runner/js"
+
+[fs]
+"/public" = "public"
